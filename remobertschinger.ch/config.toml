@@ -1,0 +1,108 @@
+baseURL = "https://0remo.github.io/"
+title = "Remo Bertschinger"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+
+# Default Theme
+theme = "gruvhugo"
+
+# Default Post Extension
+defaultExtension= "html"
+
+# Default metadata format for newly created frontmatter using
+# hugo new command. "toml", "yaml", or "json"
+metaDataFormat= "yaml"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "Remo Bertschinger, blog, programming, tech"
+  headerTitle = "Remo Bertschinger"
+  copyright = "© 2021 Remo Bertschinger.  <a href=\"https://creativecommons.org/licenses/by/4.0/\">Some rights reserved</a>."
+  name = "remo_bertschinger"
+  img = "img/remo_bertschinger.jpg"
+  icon = "img/logo.png"
+  quote = "Hi there! 👋"
+  description = "I am a fourth year part-time student studying Computer science and working as a Software Developer in Zürich. This website is my little project for keeping track of the things I've learned. I'm passionate about programming, learning new skills and building things which are (hopefully) helpful for others. Aside from looking at my screen, you can catch me hiking in the beautiful mountains of Switzerland, riding my racing bike through Zürich or reading a good book."
+  licenseUrl = ""
+
+ # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:bertschinger.remo@outlook.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/0remo"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "post/"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

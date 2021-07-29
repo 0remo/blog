@@ -1,0 +1,7 @@
+[submodule "remobertschinger.ch/public"]
+	path = remobertschinger.ch/public
+	url = https://github.com/0remo/0remo.github.io.git
+	branch = main
+[submodule "remobertschinger.ch/themes/gruvhugo"]
+	path = remobertschinger.ch/themes/gruvhugo
+	url = https://gitlab.com/avron/gruvhugo.git
