@@ -7,6 +7,12 @@ tags = [
 ]
 +++
 
+<head>
+    <link rel="stylesheet" href="../../static/main.css">
+</head>
+
+
+
 Today I will be installing a minimal Fedora 34 setup on my Lenovo T480.
 
 ![My Lenovo T480](../../img/t480.jpg "My Lenovo T480")
@@ -27,7 +33,7 @@ Fedora is a linux distribution from Red Hat which I've been using for some years
 
 3. After configuring my machine in the wizard, this is how it looks like.
 
-![Installation summary](static/img/installation.jpg "Installation summary")
+![Installation summary](../../img/installation.jpg "Installation summary")
 
 4. Notice that I selected "Minimal Install" in the "Software Selection".
 
@@ -37,7 +43,7 @@ Fedora is a linux distribution from Red Hat which I've been using for some years
 
 ### Installing firmware
 
-Because the minimal installation does not install any wireless firmware, I need to install the packages needed to create a wifi connection ourselves. 
+Because the minimal installation does not install any wireless firmware, we need to install the packages needed to create a wifi connection ourselves. 
 
 Check the current wifi status:
 
@@ -48,7 +54,7 @@ nmcli dev status
 No device of type `wifi` shows up, which means I need to install firmware for my wifi card.
 
 
-I'm switching to my VM now and download the driver for my wifi adapter from [intels website](https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html). I save the driver to my USB stick.
+I'm switching to my VM now and download the driver for my wifi adapter from [intels website](https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html). Then save the driver to my USB stick.
 
 Back on my T480, i proceed with installing the driver:
 
@@ -89,7 +95,7 @@ sudo reboot
 
 ### Installing Networking Packages
 
-These packages will need to be downloaded from my VM to the USB Stick. They should enable networking on the T480.
+These packages will need to be downloaded from my VM to the USB Stick. They should enable networking for the T480.
 ```sh
 iw
 wireless-regdb
