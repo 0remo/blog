@@ -3,15 +3,9 @@ author = "Remo Bertschinger"
 title = "Installing minimal Fedora on my T480 - Part 1"
 date = "2021-07-21"
 tags = [
-    "Linux",
+    "Linux", "Fedora"
 ]
 +++
-
-<head>
-    <link rel="stylesheet" href="../../static/main.css">
-</head>
-
-
 
 Today I will be installing a minimal Fedora 34 setup on my Lenovo T480.
 
